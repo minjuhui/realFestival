@@ -1,1 +1,51 @@
-<h1>각 학과 부스별 배치</h1>
+ {% load staticfiles %}
+ <head>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/mapst.css' %}">
+ <body>
+
+
+<div id="map">
+ <div id="tab">
+ <div><a href="#">영근터</a></div>
+ <div><a href="#">소영근터</a></div>
+ <div><a href="#">학관앞</a></div>
+ <div><a href="#">민주동산</a></div>
+ </div>
+<div id="img"><img src="{% static 'img/test.jpg' %}"></div>
+</div>
+
+ <!--truck-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <ul>
+        <li class="truck"><span><a href="#">두끼떡볶이</a></span></li>
+        <li class="truck"><span><a href="#">타코야끼</a></span></li>
+        <li class="truck"><span><a href="#">녹차호떡</a></span></li>
+        <li class="truck"><span><a href="#">야채곱창</a></span></li> 
+    </ul>
+    </div>
+    <div class="col-sm">
+      <ul>
+        <li class="flea"><span><a href="#">동화플리마켓</a></span></li>
+        <li class="flea"><span><a href="#">멋사플리마켓</a></span></li>
+        <li class="flea"><span><a href="#">덕성플리마켓</a></span></li>
+        <li class="flea"><span><a href="#">도봉플리마켓</a></span></li> 
+    </ul>
+    </div>
+    <div class="col-sm">
+      <ul>
+        <li class="booth"><span><a href="#">유교과</a></span></li>
+        <li class="booth"><span><a href="#">철학과</a></span></li>
+        <li class="booth"><span><a href="#">회계학과</a></span></li>
+        <li class="booth"><span><a href="#">컴퓨터학과</a></span></li> 
+    </ul>
+    </div>
+    </div>
+    </div>

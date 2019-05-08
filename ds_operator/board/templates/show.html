@@ -10,7 +10,7 @@
             padding-left: 75%;
             padding-top: 3%;
         }
-        .big{display:inline;}
+        .big {display:inline;}
     </style>
 </head>
 <body>
@@ -23,7 +23,8 @@
                 <div class="i">
                 <a href="{% url 'detail' board.id %}">
                     {% if board.file %}
-                    <img style="width:12em; height:11em;" src="{{board.file.url}}" alt="">
+                    <img style="width:12em; height:11em;"
+                     src="{{board.file.url}}" alt="">
                     {% endif %}
                 </a>
                 </div>
