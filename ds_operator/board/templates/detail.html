@@ -1,15 +1,7 @@
 <!-- 한 페이지 상세내용 -->
-<head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{  background-color: #FFFFFF;
-    box-shadow: 2px 2px 3px gray ;}
-</style>
-    
-</head>
-<body>
-<div class="container">
+{% extends 'base.html' %}
+{% block contents %}
+
 <div class="row">
     <div class="col-xs-12 col-md-8">{{ board.title }}</div>
     <div class="col-xs-6 col-md-4">{{ board.updated_at|date:"m/d H:i"}}</div>
@@ -20,7 +12,6 @@ body{  background-color: #FFFFFF;
 </div>
 {{board.body}}
 </div>
-
 
 <div class="container1">
     <a href="{% url 'show' %}">뒤로</a>
@@ -33,5 +24,4 @@ body{  background-color: #FFFFFF;
         </form>
     </div>
     <a id="id_uploaded_file" href="{{ board.file.url }}" download>다운로드</a>
-</div>
-</body>
+{% endblock %}
